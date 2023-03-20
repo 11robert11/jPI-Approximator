@@ -31,12 +31,13 @@
                      </padding>
                   </HBox>
                   <Polygon fill="#ffffff00" layoutX="125.0" layoutY="98.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="OUTSIDE" />
-                  <VBox layoutX="194.0" layoutY="26.0" prefHeight="200.0" prefWidth="312.0">
+                  <VBox layoutX="194.0" layoutY="26.0">
                      <children>
-                        <Label fx:id="piApprox" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PI" textAlignment="CENTER" VBox.vgrow="NEVER" />
+                        <Label fx:id="piApprox" alignment="TOP_LEFT" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="1500.0" prefHeight="95.0" prefWidth="1500.0" text="?pi" textAlignment="CENTER" wrapText="true" VBox.vgrow="NEVER" />
                         <Label fx:id="iterations" alignment="CENTER" contentDisplay="CENTER" text="?itterations" textAlignment="CENTER" />
-                        <Label fx:id="running" alignment="CENTER" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Running" textAlignment="CENTER" />
-                        <Label fx:id="polygonSides" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Running" textAlignment="CENTER" />
+                        <Label fx:id="running" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="393.0" text="Running" textAlignment="CENTER" />
+                        <Label fx:id="polygonSides" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="?polygonSides" textAlignment="CENTER" />
+                        <Label fx:id="piAccuracy" graphicTextGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="?pidiffrnce" textAlignment="CENTER" />
                      </children>
                      <opaqueInsets>
                         <Insets />

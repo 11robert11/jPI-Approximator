@@ -17,6 +17,8 @@ public class HelloController {
     protected Label running;
     @FXML
     protected Label polygonSides;
+    @FXML
+    protected Label piAccuracy;
 
 
     @FXML

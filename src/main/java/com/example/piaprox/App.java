@@ -8,6 +8,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apfloat.Apfloat;
 
 import java.io.IOException;
 import java.util.Timer;
@@ -25,7 +26,7 @@ public class App extends Application {
 
     }
     public static void main(String[] args)  {
-        System.out.println(Calculate.sin((float) (Math.PI/2f)));
+        System.out.println(Calculate.sin(new Apfloat(Math.PI/2f)));
         launch(args);
 
     }

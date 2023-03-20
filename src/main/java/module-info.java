@@ -1,6 +1,7 @@
 module com.example.piaprox {
     requires javafx.controls;
     requires javafx.fxml;
+    requires org.apfloat;
 
 
     opens com.example.piaprox to javafx.fxml;

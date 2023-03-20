@@ -1,5 +1,7 @@
 package com.example.piaprox.gui;
 
+import org.apfloat.Apfloat;
+
 import java.text.DecimalFormat;
 
 import static com.example.piaprox.calculate.Calculate.*;
@@ -9,7 +11,8 @@ public class Update implements Runnable {
     public void run() {
         instance.iterations.setText("Iterations: " + String.valueOf(iterations));
         instance.running.setText("Calculator: " + String.valueOf(running));
-        instance.piApprox.setText(String.valueOf(new DecimalFormat("#0.0000000000000000").format(PI)));
+        instance.piApprox.setText(PI.toString(true));
         instance.polygonSides.setText("Polygon Sides: " + String.valueOf(polygonSides));
+        instance.piAccuracy.setText("Diffrence of approx pi: " + new Apfloat(Math.PI).subtract(PI));
     }
 }
